@@ -1,0 +1,734 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Montserrat';
+}
+
+.section {
+    height: 100vh;
+    background-image: url(./images/3873777.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.section header{
+    width:100%;
+    height: 100px;
+}
+.container-normal{ 
+    max-width: 980px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+.container{ 
+    max-width: 980px;
+    height: calc(100vh - 100px);
+    margin: auto;
+    display: flex;
+}
+.section header .container.header{ 
+    max-width: 980px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.section header .container.header .header-logo{
+    font-size: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: #7345d6;
+    cursor: pointer;
+}
+
+.section header .container.header .search-area{
+    width: 550px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.section header .container.header .search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 13px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.section header .container.header input {
+    width: 350px;
+    padding: 10px 0px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Montserrat';
+    background-color: transparent;
+}
+.section header .container.header input::placeholder{
+    color: #fff;
+    opacity: 0.4;
+}
+.section header .container.header img{
+    width: 30px;
+    height: auto;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+
+.section .menu-hamburguer {
+    display: none;
+    width: 35px;
+    height: 25px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section .menu-hamburguer .menu-line{
+    width:100%;
+    height: 3px;
+    background-color: #d10b85;
+}
+
+.menu-modal-area{
+    background-color:rgba(84, 42, 199, 0.952);
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    transition: linear .2s;
+    flex-direction: column;
+    display: flex;
+}
+.menu-modal-closer{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+}
+.menu-modal-closer img{
+    width: 35px;
+    filter: invert(1);
+    right: 0;
+    margin-top: 15px;
+    margin-right: 15px;
+    position: absolute;
+}
+
+.menu-modal-options{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+}
+
+.menu-modal-options li{
+    width: 80%;
+    margin-top: 30px;
+    padding: 4px 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-modal-options li a{
+    text-decoration: none;
+    font-style: bold;
+    font-size: 18px;
+}
+
+
+
+
+.section .nav{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.section .nav ul, li{
+    text-decoration: none;
+    display: flex;
+    gap: 50px;
+}
+.section .nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'poppins';
+    font-size: 18px;
+    transition: all .3s;
+}
+.section .nav ul li a:hover{
+    color: #ccc;
+} 
+
+
+
+
+.section .container .section1-leftsaid{
+    width: 500px;
+    height: 100%;
+}
+
+.section .container .section1-leftsaid h1{
+    margin-top: 40px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Poppins';
+    letter-spacing: 1px;
+}
+.section .container .section1-leftsaid h1 span {
+    color: #d10b85;
+    font-family: 'Poppins';
+}
+.section .container .section1-leftsaid p{
+    margin-top: 14px;
+}
+
+.section .container .section1-leftsaid .botao-area{
+    width: 100%;
+    margin-top: 40px;
+}
+.section .container .section1-leftsaid .botao-area a{
+    text-decoration: none;
+    background-color: #a70267;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: 'poppins';
+    transition: all .4s;
+}
+.section .container .section1-leftsaid .botao-area a:hover{
+    background-color: #720147;
+    color: #b6b6b6;
+}
+
+
+
+
+.section .container .section1-rightsaid{
+    flex: 1;
+}
+
+.section .container .section1-rightsaid img{
+    width: 80px;
+    height: auto;
+    position: absolute;
+}
+
+.section .container .section1-rightsaid #bitcoin-hand{
+    width: 360px;
+    margin-top: 100px;
+    margin-left: -300px;
+    filter: invert(1);
+    opacity: .1;
+}
+
+.section .container .section1-rightsaid #target-img1{
+    width: 120px;
+    filter: invert(1);
+    opacity: .1;
+    margin-left: 370px;
+}
+.section .container .section1-rightsaid #target-img2{
+    width: 120px;
+    filter: invert(1);
+    opacity: .2;
+    top: 60%;
+    left: 59%;
+}
+.section .container .section1-rightsaid #dollar-img{
+    width: 120px;
+    filter: invert(1);
+    opacity: .1;
+    margin-top: 30px;
+    margin-left: 140px;
+}
+.section .container .section1-rightsaid #pikachu-img{
+    width: 400px;
+    margin-left: 90px;
+}
+
+
+
+
+.section2-leftsaid {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section2-leftsaid img{
+    width: 80%;
+    border-bottom: 1px solid #7345d6;
+}
+
+.section2-rightsaid{
+    flex:1;
+    text-align: center;
+    position: relative;
+}
+
+.section2-rightsaid h3{
+    font-size: 35px;
+    margin-top: 130px;
+    text-transform: uppercase;
+}
+
+.section2-rightsaid p{
+    margin-top: 30px;
+}
+
+.section2-rightsaid span{
+    font-weight: bold;
+    font-size: 18px;
+    color: #d10b85;
+}
+
+.section2-rightsaid #dollar-img1{
+    width: 120px;
+    filter: invert(1);
+    opacity: .1;
+    position: absolute;
+    margin-top: 400px;
+}
+.section2-rightsaid #dollar-img2{
+    width: 120px;
+    filter: invert(1);
+    opacity: .2;
+    position: absolute;
+    left: 0;
+    margin-top: 40px;
+}
+.section2-rightsaid #dollar-img3{
+    width: 120px;
+    filter: invert(1);
+    opacity: .1;
+    position: absolute;
+    margin-top: 80px;
+    right: 0;
+}
+
+
+.container-slideshow{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-slideshow h2{
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: 'poppins';
+    font-weight: bold;
+}
+
+.slideshow-options{
+    padding-top: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.slideshow-options button{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: transparent;
+    border: 3px solid #bd0b79;
+    border-radius:5px;
+    padding: 8px 30px;
+    transition: all .5s;
+}
+.slideshow-options button:focus{
+    background-color: #bd0b79;
+    scale: 1.2;
+    box-shadow: 0px 0px 5px 0px #ff2ad1c0;
+}
+
+.slideshow-options button:hover{
+    scale: 1.2;
+}
+
+.slide-area{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.slide-area .slide-item{
+    width: 200px;
+    height: 300px;
+    background-color: #1f0435;
+    border: 3px solid #d013d6;
+    border-radius: 30px 0px 30px 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s;
+}
+.slide-area .slide-item:hover{
+    scale: 1.1;
+}
+
+.slide-infos-area-geral {
+    width: 93%;
+    height: 93%;
+    position: inherit;
+}
+
+.slide-area .slide-item img{
+    width: 100%;
+    height: auto;
+    border-radius: 30px 0px 30px 0px;
+    background-color: red;
+}
+
+.slide-area .slide-item .slide-item-info{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 13px 8px;
+    border-radius: 30px 0px 30px 0px;
+    background-image: linear-gradient(to bottom, #2aaaff, #d145d6);
+}
+.slide-area .slide-item .slide-item-info .slide-info-title{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.slide-area .slide-item .slide-item-info .slide-info-sell{
+    display: flex;
+}
+
+
+.slide-area .slide-item .slide-item-info .slide-info-sell a{
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.slide-area .slide-item .slide-item-info .slide-info-sell span{
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+.slide-area .slide-item .slide-item-info .slide-info-extras{
+    display: flex;
+    margin-top:10px;
+}
+
+.slide-info-price{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.slide-area .slide-item .slide-item-info .slide-info-extras .slide-info-ball{
+    margin-left: 55px;
+}
+
+
+
+.left-form-section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-form-section{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.right-form-section img{
+    height: auto;
+}
+.left-form-section form{
+    margin-top: 30px;
+    width: 70%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+}
+.left-form-section .form-title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.left-form-section form #input-name{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    color: #000;
+    padding: 2px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.left-form-section form #input-email{
+    margin-top: 20px;
+    width: 100%;
+    border: 0;
+    color: #000;
+    outline: 0;
+    padding: 2px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.left-form-section form .checkbox-area{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.left-form-section form .checkbox-area .checkbox-text{
+    color: #666;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.left-form-section form .checkbox-area .checkbox-text a{
+    color: rgb(0, 140, 255);
+}
+
+.left-form-section form #input-submit{
+    margin-top: 30px;
+    border: 0;
+    padding: 10px 20px;
+    background-color: #bd0b79;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+
+
+footer{
+    width: 100%;
+    padding: 70px;
+    background-color: #111;
+    display: flex;
+}
+
+.footer-left-said{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-left-said a{
+    margin-top: 10px;
+    font-size: 15px;
+    color: #555;
+}
+.footer-left-said .footer-email{
+    margin-top: 13px;
+    color: #ccc;
+}
+
+.footer-right-said{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-right-said .footer-direitos{
+    color: #555;
+    font-size: 14px;
+}
+
+.footer-right-said .footer-logo{
+    color: #7345d6;
+    font-size: 30px;
+}
+
+
+
+
+
+@media (max-width: 1030px){
+    .container{
+        max-width:880px
+    }
+    .section .container .section1-leftsaid{
+        width:400px;
+    }
+    .container-normal{
+        max-width: 880px;
+    }
+}
+
+@media (max-width: 780px){
+    .section .nav{
+        display: none;
+    }
+    .section .menu-hamburguer{
+        display: flex;
+        margin-left: 80px;
+    }
+    .section header .container.header{
+        align-items: center;
+        max-width: 100%;
+    }
+    .section .container .section1-rightsaid #pikachu-img{
+        width: 300px;
+        margin-left: 0px;
+    }
+    .section .container .section1-rightsaid #target-img1{
+        width: 80px;
+        margin-left: 0px;
+    }
+    .section header .container.header .search-area{
+        justify-content: flex-end;
+        width: 450px;
+    }
+    .section header .container.header .header-logo{
+        margin-left: 30px;
+    }
+    .section .container .section1-rightsaid #bitcoin-hand{
+        width: 260px;
+    }
+    .section .container .section1-leftsaid h1{
+        font-size: 30px;
+    }
+    .container{
+        max-width: 640px;
+    }
+    .section .container .section1-leftsaid p{
+        font-size: 13px;
+    }
+    .section2-rightsaid h3{
+        font-size: 30px;
+    }
+    .container-normal{
+        max-width: 640px;
+    }
+    .section2-rightsaid p{
+        font-size: 14px;
+    }
+    .section2-rightsaid span{
+        font-size: 16px;
+    }
+    .section.big{
+        height: 100%;
+        padding-bottom: 30px;
+    }
+    .slide-area{
+        margin-top: 20px;
+    }
+    .slide-area .slide-item{
+        margin: 20px;
+    }
+    .left-form-section form{
+        width: 100%;
+    }
+}
+
+
+@media (max-width:450px){
+    .container{
+        flex-direction: column;
+    }
+    .section header .container.header{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .section{
+        height: 110vh;
+    }
+    .section .container .section1-leftsaid{
+        text-align: center;
+        height: 400px;
+    }
+    .right-form-section img{
+       width: 200px;
+    }
+    .slideshow-options{
+        flex-direction: column;
+    }
+    .container-normal{
+        flex-direction: column;
+        justify-content:center;
+    }
+    .left-form-section{
+        justify-content: center;
+        align-items: center;
+    }
+    .left-form-section form{
+        width: 80%;
+    }
+    .slideshow-options{
+        padding: 0px 80px;
+        margin-top: 30px;
+    }
+    .container-slideshow{
+        text-align: center;
+    }
+    .section header .container.header .search-area{
+        display: none;
+    }
+    .section header .container.header .header-logo{
+        margin-left: 0px;
+    }
+    .section .container .section1-leftsaid{
+        width:100%;
+        padding: 0px 20px;
+    }
+    .section .container .section1-leftsaid p{
+        font-size: 15px;
+    }
+    .section .container .section1-leftsaid .botao-area a{
+        padding: 10px 100px;
+    }
+    .section .container .section1-rightsaid{
+        display: flex;
+        justify-content: center;
+    }
+    .section .container .section1-rightsaid #target-img1{
+        display: none;
+    }
+    .section2-leftsaid img{
+        display: none;
+    }
+    .section2-rightsaid{
+        padding: 0px 25px;
+    }
+    .section.two{
+        height: 100%;
+        padding-bottom: 100px;
+    }
+    footer {
+        padding: 20px;
+    }
+}
+
+
+@media (max-width:350px){
+    .section .container .section1-rightsaid #pikachu-img{
+        margin-top: 50px;
+    }
+}
